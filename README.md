@@ -12,3 +12,19 @@ gradle tasks
 # or
 gradle installDebug
 ```
+
+How to build smaples from Android SDK?
+----
+
+You can do this just in few steps:
+```bash
+# Copy build.gradle into samples directory
+cp build.gradle $ANDROID_HOME/samples/android-<version>/
+# Copy samples.sh into samples directory
+cp samples.sh $ANDROID_HOME/samples/android-<version>/
+# Go into samples directory
+cd $ANDROID_HOME/samples/android-<version>/
+# Run samples.sh
+./samples.sh
+# Wait until it compile and install all .apk files to your attached device
+```
